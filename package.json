@@ -25,6 +25,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+    "pre-deploy": "npm run build",
+    "deploy": "gh-pages -d public -b test",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
