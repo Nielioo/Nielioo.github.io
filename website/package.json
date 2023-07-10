@@ -4,7 +4,7 @@
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "homepage": "https://nielioo.github.io/",
+  "homepage": "https://nielioo.github.io/website",
   "dependencies": {
     "gatsby": "^5.11.0",
     "gatsby-plugin-image": "^3.11.0",
