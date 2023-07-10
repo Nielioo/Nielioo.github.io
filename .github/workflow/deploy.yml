@@ -2,7 +2,7 @@ name: Gatsby Deploy
 
 on:
   push:
-    branches: test
+    branches: gh-pages
 
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }}
