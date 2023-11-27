@@ -36,7 +36,7 @@ const HeroSection = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
           voluptatum.
         </p>
-        <div>
+        <div className="flex flex-col sm:flex-row justify-center items-center w-full">
           <button className="bg-gradient-to-br from-sky-500 via-indigo-500 to-purple-500 hover:bg-slate-200 text-white px-6 py-3 rounded-full mr-4">
             Hire Me
           </button>
