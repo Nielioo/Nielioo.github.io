@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import ProjectCard from "@/components/ProjectCard";
-import ProjectTag from "@/components/ProjectTag";
+import ProjectCard from "@/app/components/ProjectCard";
+import ProjectTag from "@/app/components/ProjectTag";
 
 const projectsData = [
    {
@@ -83,7 +83,7 @@ const ProjectsSection = () => {
                isSelected={tag == "Mobile"}
             />
          </div>
-         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 md:gap-12 ">
+         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 md:gap-12">
             {filteredProjects.map((project, index) => (
                <ProjectCard
                   key={project.id}
