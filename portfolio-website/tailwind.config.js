@@ -18,8 +18,8 @@ module.exports = {
     },
     colors: {
       ...colors,
-      primary: colors.sky,
-      secondary: colors.purple,
+      primary: colors.purple,
+      secondary: colors.sky,
     },
   },
   plugins: [],
