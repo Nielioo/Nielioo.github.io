@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
