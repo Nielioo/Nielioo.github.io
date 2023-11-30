@@ -12,7 +12,6 @@ const projectsData = [
       image: "/images/projects/1.png",
       tag: ["All", "Web"],
       githubUrl: "/",
-      previewUrl: "/",
    },
    {
       id: 2,
