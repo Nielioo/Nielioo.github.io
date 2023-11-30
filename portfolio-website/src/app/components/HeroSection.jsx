@@ -41,8 +41,7 @@ const HeroSection = () => {
                   />
                </h1>
                <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam, voluptuous.
+               I build exceptional and accessible digital experiences for the web and mobile app.
                </p>
                <div>
                   <Link
@@ -72,8 +71,8 @@ const HeroSection = () => {
                      src="/images/hero-image.png"
                      alt="hero image"
                      className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                     width={300}
-                     height={300}
+                     width={450}
+                     height={450}
                   />
                </div>
             </motion.div>
