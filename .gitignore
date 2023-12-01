@@ -67,3 +67,6 @@ public/manifest.json
 
 # Cache
 .swc/
+
+# Photoshop
+*.psd
