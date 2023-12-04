@@ -1,8 +1,18 @@
 import React from "react";
-import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
+// import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faCode } from "@fortawesome/free-solid-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
-const ProjectCard = ({ imgUrl, title, description, previewUrl, githubUrl }) => {
+const ProjectCard = ({
+   imgUrl,
+   title,
+   description,
+   previewUrl,
+   youtubeUrl,
+   githubUrl,
+}) => {
    return (
       <div>
          <div
@@ -21,17 +31,39 @@ const ProjectCard = ({ imgUrl, title, description, previewUrl, githubUrl }) => {
                {previewUrl != undefined ? (
                   <Link
                      href={previewUrl}
-                     className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white mr-4 group/link"
+                     className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white m-2 group/link"
                   >
-                     <EyeIcon className="h-10 w-10 text-[#ADB7BE] group-hover/link:text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+                     <FontAwesomeIcon
+                        icon={faEye}
+                        className="h-8 w-8 text-[#ADB7BE] group-hover/link:text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                       
+                     />
                   </Link>
                ) : null}
-               <Link
-                  href={githubUrl}
-                  className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
-               >
-                  <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] group-hover/link:text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
-               </Link>
+               {githubUrl != undefined ? (
+                  <Link
+                     href={githubUrl}
+                     className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white m-2 group/link"
+                  >
+                     <FontAwesomeIcon
+                        icon={faCode}
+                        className="h-8 w-8 text-[#ADB7BE] group-hover/link:text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                        
+                     />
+                  </Link>
+               ) : null}
+               {youtubeUrl != undefined ? (
+                  <Link
+                     href={youtubeUrl}
+                     className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white m-2 group/link"
+                  >
+                     <FontAwesomeIcon
+                        icon={faYoutube}
+                        className="h-8 w-8 text-[#ADB7BE] group-hover/link:text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                        
+                     />
+                  </Link>
+               ) : null}
             </div>
          </div>
          <div className="bg-[#181818] rounded-b-xl py-6 px-4 text-white">

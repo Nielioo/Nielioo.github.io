@@ -7,47 +7,133 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
    {
       id: 1,
-      title: "React Portfolio Website",
-      description: "Project 1 description",
-      image: "/images/projects/1.png",
-      tag: ["All", "Web"],
+      title: "Arcane Scroll",
+      description: "Description of the project",
+      image: "/images/projects/dummy.png",
+      tag: ["All", "Other"],
+      previewUrl: "/",
       githubUrl: "/",
+      youtubeUrl: "/",
    },
    {
       id: 2,
-      title: "Potography Portfolio Website",
-      description: "Project 2 description",
-      image: "/images/projects/2.png",
+      title: "FigTure",
+      description: "Description of the project",
+      image: "/images/projects/dummy.png",
       tag: ["All", "Web"],
-      githubUrl: "/",
       previewUrl: "/",
+      githubUrl: "/",
+      youtubeUrl: "/",
    },
    {
       id: 3,
-      title: "E-commerce Application",
-      description: "Project 3 description",
-      image: "/images/projects/3.png",
-      tag: ["All", "Web"],
-      githubUrl: "/",
+      title: "Eon Memory",
+      description: "Description of the project",
+      image: "/images/projects/dummy.png",
+      tag: ["All", "Mobile"],
       previewUrl: "/",
+      githubUrl: "/",
+      youtubeUrl: "/",
    },
    {
       id: 4,
-      title: "Food Ordering Application",
-      description: "Project 4 description",
-      image: "/images/projects/4.png",
+      title: "DokterKit",
+      description: "Description of the project",
+      image: "/images/projects/dummy.png",
       tag: ["All", "Mobile"],
-      githubUrl: "/",
       previewUrl: "/",
+      githubUrl: "/",
+      youtubeUrl: "/",
    },
    {
       id: 5,
-      title: "React Firebase Template",
-      description: "Authentication and CRUD operations",
-      image: "/images/projects/5.png",
-      tag: ["All", "Web"],
-      githubUrl: "/",
+      title: "DaMovie",
+      description: "Description of the project",
+      image: "/images/projects/dummy.png",
+      tag: ["All", "Mobile"],
       previewUrl: "/",
+      githubUrl: "/",
+      youtubeUrl: "/",
+   },
+   {
+      id: 6,
+      title: "DaFranchise",
+      description: "Description of the project",
+      image: "/images/projects/dummy.png",
+      tag: ["All", "Web"],
+      previewUrl: "/",
+      githubUrl: "/",
+      youtubeUrl: "/",
+   },
+   {
+      id: 7,
+      title: "Radiance",
+      description: "Description of the project",
+      image: "/images/projects/dummy.png",
+      tag: ["All", "Web", "Mobile"],
+      previewUrl: "/",
+      githubUrl: "/",
+      youtubeUrl: "/",
+   },
+   {
+      id: 8,
+      title: "Nightscape",
+      description: "Description of the project",
+      image: "/images/projects/dummy.png",
+      tag: ["All", "Other"],
+      previewUrl: "/",
+      githubUrl: "/",
+      youtubeUrl: "/",
+   },
+   {
+      id: 9,
+      title: "Windrise",
+      description: "Description of the project",
+      image: "/images/projects/dummy.png",
+      tag: ["All", "Mobile"],
+      previewUrl: "/",
+      githubUrl: "/",
+      youtubeUrl: "/",
+   },
+   {
+      id: 10,
+      title: "Rate Ruler",
+      description: "Description of the project",
+      image: "/images/projects/dummy.png",
+      tag: ["All", "Mobile"],
+      previewUrl: "/",
+      githubUrl: "/",
+      youtubeUrl: "/",
+   },
+   {
+      id: 11,
+      title: "Katakan",
+      description: "Description of the project",
+      image: "/images/projects/dummy.png",
+      tag: ["All", "Mobile"],
+      previewUrl: "/",
+      githubUrl: "/",
+      youtubeUrl: "/",
+   },
+   {
+      id: 12,
+      title: "Dialoque",
+      description: "Description of the project",
+      image: "/images/projects/dummy.png",
+      tag: ["All", "Mobile", "Other"],
+      previewUrl: "/",
+      githubUrl: "/",
+      youtubeUrl: "/",
+   },
+   {
+      id: 13,
+      title: "Moco",
+      description: "Description of the project",
+      image: "/images/projects/dummy.png",
+      tag: ["All", "Mobile"],
+      previewUrl: "/",
+      githubUrl: "/",
+      youtubeUrl: "/",
    },
 ];
 
@@ -90,9 +176,14 @@ const ProjectsSection = () => {
                name="Mobile"
                isSelected={tag === "Mobile"}
             />
+            <ProjectTag
+               onClick={handleTagChange}
+               name="Other"
+               isSelected={tag === "Other"}
+            />
          </div>
          <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-            {filteredProjects.map((project, index) => (
+            {filteredProjects.slice().reverse().map((project, index) => (
                <motion.li
                   key={index}
                   variants={cardVariants}
@@ -105,8 +196,9 @@ const ProjectsSection = () => {
                      title={project.title}
                      description={project.description}
                      imgUrl={project.image}
-                     githubUrl={project.githubUrl}
                      previewUrl={project.previewUrl}
+                     youtubeUrl={project.youtubeUrl}
+                     githubUrl={project.githubUrl}
                   />
                </motion.li>
             ))}
