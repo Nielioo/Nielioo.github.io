@@ -23,7 +23,7 @@ const AboutSection = () => {
                Whether you have a question or just want to say hi,
                I&apos;ll try my best to get back to you!
             </p>
-            <div className="socials flex flex-row gap-3">
+            <div className="socials flex flex-row text-white gap-3">
                <Link href="https://github.com/Nielioo">
                   <FontAwesomeIcon icon={faGithub} alt="Github Icon" size="lg" />
                </Link>
