@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faCode } from "@fortawesome/free-solid-svg-icons";
@@ -9,10 +9,13 @@ const ProjectCard = ({
    imgUrl,
    title,
    description,
+   technologies,
    previewUrl,
    youtubeUrl,
    githubUrl,
 }) => {
+   const [isExpanded, setIsExpanded] = useState(false);
+
    return (
       <div>
          <div
@@ -36,7 +39,6 @@ const ProjectCard = ({
                      <FontAwesomeIcon
                         icon={faEye}
                         className="h-8 w-8 text-[#ADB7BE] group-hover/link:text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                       
                      />
                   </Link>
                ) : null}
@@ -48,7 +50,6 @@ const ProjectCard = ({
                      <FontAwesomeIcon
                         icon={faCode}
                         className="h-8 w-8 text-[#ADB7BE] group-hover/link:text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                        
                      />
                   </Link>
                ) : null}
@@ -60,7 +61,6 @@ const ProjectCard = ({
                      <FontAwesomeIcon
                         icon={faYoutube}
                         className="h-8 w-8 text-[#ADB7BE] group-hover/link:text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                        
                      />
                   </Link>
                ) : null}
@@ -68,7 +68,25 @@ const ProjectCard = ({
          </div>
          <div className="bg-[#181818] rounded-b-xl py-6 px-4 text-white">
             <h5 className="font-lg font-semibold">{title}</h5>
-            <p className="text-[#ADB7BE]">{description}</p>
+            <p className="text-[#ADB7BE]">
+               {isExpanded || description.length <= 224
+                  ? description
+                  : `${description.slice(0, 224)}...`}
+            </p>
+            {description.length > 224 && (
+               <button onClick={() => setIsExpanded(!isExpanded)}>
+                  {isExpanded ? "Less" : "More"}
+               </button>
+            )}
+            <ul className="mt-2 flex flex-wrap">
+            {technologies.map((tech) => (
+               <li className="mr-1.5 mt-2" key={tech}>
+                  <div className="flex items-center rounded-full bg-primary-400/10 px-3 py-1 text-xs font-medium leading-5 text-primary-300 ">
+                     {tech}
+                  </div>
+               </li>
+            ))}
+         </ul>
          </div>
       </div>
    );
