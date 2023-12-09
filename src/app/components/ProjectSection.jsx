@@ -248,7 +248,7 @@ const ProjectsSection = () => {
          </div>
          <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
             {filteredProjects
-               .toReversed()
+               .reverse()
                .slice((cardPage - 1) * 6, cardPage * 6)
                .map((project, index) => (
                   <motion.li
@@ -274,15 +274,15 @@ const ProjectsSection = () => {
          <div className="flex justify-center items-center">
             <button
                onClick={() => setCardPage(cardPage - 1)}
-               className="border-2 rounded-full px-5 py-2 mt-8 text-l hover:bg-primary-500 hover:border-primary-500 hover:text-white transition-all duration-400 disabled:opacity-0"
+               className="border-2 rounded-full px-5 py-2 mt-8 text-l text-white hover:bg-primary-500 hover:border-primary-500 hover:text-white transition-all duration-400 disabled:opacity-0"
                disabled={cardPage === 1}
             >
                Prev
             </button>
-            <span className="px-5 py-2 mt-8 text-l">{cardPage}</span>
+            <span className="px-5 py-2 mt-8 text-l text-white">{cardPage}</span>
             <button
                onClick={() => setCardPage(cardPage + 1)}
-               className="border-2 rounded-full px-5 py-2 mt-8 text-l hover:bg-primary-500 hover:border-primary-500 hover:text-white transition-all duration-400 disabled:opacity-0"
+               className="border-2 rounded-full px-5 py-2 mt-8 text-l text-white hover:bg-primary-500 hover:border-primary-500 hover:text-white transition-all duration-400 disabled:opacity-0"
                disabled={cardPage === Math.ceil(filteredProjects.length / 6)}
             >
                Next
