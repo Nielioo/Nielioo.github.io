@@ -5,19 +5,13 @@ import TabButton from "@/app/components/TabButton";
 
 const TAB_DATA = [
    {
-      title: "Skills",
-      id: "skills",
+      title: "Awards",
+      id: "awards",
       content: (
-         <ul className="grid grid-cols-2 list-disc pl-2">
-            <li>PHP</li>
-            <li>Javascript</li>
-            <li>Node.js</li>
-            <li>Firebase</li>
-            <li>MySQL</li>
-            <li>Java</li>
-            <li>Kotlin</li>
-            <li>Flutter</li>
-            <li>SwiftUI</li>
+         <ul className="list-disc pl-2">
+            <li>2th Runner Up Application Business Idea on Faculty of Information Technology Competition 2022</li>
+            <li>3th Winner Web/Mobile Application on LO KREATIF 2021</li>
+            <li>Best Student in Academic Performance Award Informatics 2020</li>
          </ul>
       ),
    },
@@ -46,7 +40,7 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-   const [tab, setTab] = useState("skills");
+   const [tab, setTab] = useState("education");
    const [isPending, startTransition] = useTransition();
 
    const handleTabChange = (id) => {
@@ -62,22 +56,23 @@ const AboutSection = () => {
             <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
                <p className="text-base lg:text-lg">
-                  My true passion lies in full-stack development, where I get to
-                  bring my ideas to life through coding magic. I have experience
-                  working with PHP, Javascript, Node.js, Firebase, MySQL, Java,
-                  Kotlin, Flutter, SwiftUI and Git. I am a quick learner and I
-                  am always looking to expand my knowledge and skill set. I am a
-                  team player and I am excited to work with others to create
-                  amazing applications.
+                  As an iOS developer with ±1 year of experience at the Apple
+                  Developer Academy, I have honed my skills in a variety of
+                  programming languages and technologies. My technical expertise
+                  as informatics student includes Swift, Objective-C, SwiftUI,
+                  iOS SDK, CloudKit, App Store Connect, Dart, Flutter, Java,
+                  Kotlin, Firebase, MySQL, PHP, Laravel Framework, Javascript,
+                  Node.js, NextJs, Python, RestAPI, Git, Agile Methodologies,
+                  Mobile Software Development Life Cycle (SDLC), Test
+                  Engineering & Automation and various design patterns such as
+                  MVC and MVVM. Beyond my hard skills, I bring strong soft
+                  skills to the table, including leadership, collaboration, and
+                  time management. I am passionate about creating innovative
+                  solutions and am always ready to take on new challenges. I
+                  look forward to bringing my unique blend of skills and
+                  experience to future projects and collaborations.
                </p>
                <div className="flex flex-row justify-start mt-8">
-                  <TabButton
-                     selectTab={() => handleTabChange("skills")}
-                     active={tab === "skills"}
-                  >
-                     {" "}
-                     Skills{" "}
-                  </TabButton>
                   <TabButton
                      selectTab={() => handleTabChange("education")}
                      active={tab === "education"}
@@ -91,6 +86,13 @@ const AboutSection = () => {
                   >
                      {" "}
                      Certifications{" "}
+                  </TabButton>
+                  <TabButton
+                     selectTab={() => handleTabChange("awards")}
+                     active={tab === "awards"}
+                  >
+                     {" "}
+                     Awards{" "}
                   </TabButton>
                </div>
                <div className="mt-8">

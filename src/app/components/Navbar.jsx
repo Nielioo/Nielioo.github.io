@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import NavLink from "@/app/components/NavLink";
 import MenuOverlay from "@/app/components/MenuOverlay";
@@ -28,9 +29,16 @@ const Navbar = () => {
          <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
             <Link
                href={"/"}
-               className="text-2xl md:text-3xl text-white font-semibold"
+               className="flex items-center text-2xl text-white font-semibold"
             >
-               LOGO
+               <Image
+                  src="/images/logo/logo-white.png"
+                  className="w-full h-auto mr-1"
+                  alt=""
+                  width={25}
+                  height={25}
+               />
+               Nielio
             </Link>
             <div className="mobile-menu block md:hidden">
                {!navbarOpen ? (
