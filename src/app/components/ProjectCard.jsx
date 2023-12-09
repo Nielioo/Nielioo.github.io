@@ -75,7 +75,7 @@ const ProjectCard = ({
             </p>
             {description.length > 224 && (
                <button onClick={() => setIsExpanded(!isExpanded)}>
-                  {isExpanded ? "Less" : "More"}
+                  {isExpanded ? "Show Less" : "Show More"}
                </button>
             )}
             <ul className="mt-2 flex flex-wrap">
