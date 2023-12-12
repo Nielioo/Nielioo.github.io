@@ -28,7 +28,7 @@ const Navbar = () => {
       <nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-95">
          <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
             <Link
-               href={"/"}
+               href={"https://nielio.vercel.app/"}
                className="flex items-center text-2xl text-white font-semibold"
             >
                <Image
