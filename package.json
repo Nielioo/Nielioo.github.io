@@ -19,7 +19,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-fontawesome": "^1.7.1",
-    "react-social-icons": "^6.7.0",
+    "react-social-icons": "^6.8.0",
     "react-type-animation": "^3.2.0"
   },
   "devDependencies": {
