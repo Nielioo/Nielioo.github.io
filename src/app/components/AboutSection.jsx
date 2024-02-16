@@ -21,10 +21,10 @@ const TAB_DATA = [
       content: (
          <ul className="list-disc pl-2">
             <li>
-               Bachelor of Informatics Engineering - Ciputra University,
+               Bachelor of Informatics Engineering - Ciputra University Batch 2020,
                Surabaya
             </li>
-            <li>iOS Developer - Apple Developer Academy, Surabaya</li>
+            <li>iOS Developer - Apple Developer Academy Cohort 2023, Surabaya</li>
          </ul>
       ),
    },
