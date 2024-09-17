@@ -37,25 +37,12 @@ const AboutSection = () => {
                   style={{ height: 32, width: 32 }}
                />
                <SocialIcon
-                  url="https://www.instagram.com/daniel_aprillio/"
-                  network="instagram"
+                  url="https://line.me/ti/p/~daniel_aprillio"
+                  network="line.me"
                   bgColor="#FFFFFF"
                   fgColor="#000000"
                   style={{ height: 32, width: 32 }}
                />
-               <SocialIcon
-                  url="https://www.facebook.com/nielioo"
-                  network="facebook"
-                  bgColor="#FFFFFF"
-                  fgColor="#000000"
-                  style={{ height: 32, width: 32 }}
-               />
-               <Link href="https://line.me/ti/p/~daniel_aprillio">
-                  <FontAwesomeIcon
-                     icon={faLine}
-                     style={{ height: 32, width: 32 }}
-                  />
-               </Link>
                <SocialIcon
                   url="https://t.me/Nielioo"
                   network="telegram"
@@ -70,6 +57,20 @@ const AboutSection = () => {
                   fgColor="#000000"
                   style={{ height: 32, width: 32 }}
                />
+               <SocialIcon
+                  url="https://www.instagram.com/daniel_aprillio/"
+                  network="instagram"
+                  bgColor="#FFFFFF"
+                  fgColor="#000000"
+                  style={{ height: 32, width: 32 }}
+               />
+               {/* <SocialIcon
+                  url="https://www.facebook.com/nielioo"
+                  network="facebook"
+                  bgColor="#FFFFFF"
+                  fgColor="#000000"
+                  style={{ height: 32, width: 32 }}
+               /> */}
             </div>
          </div>
       </section>
