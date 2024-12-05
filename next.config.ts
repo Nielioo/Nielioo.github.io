@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
+import path from 'path';
+import nextRemoteRefresh from 'next-remote-refresh';
+
+const withRemoteRefresh = nextRemoteRefresh({
+  paths: [path.resolve(__dirname, 'src', 'contents')],
+});
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  eslint: {
+    dirs: ["src"],
+  },
 };
 
-export default nextConfig;
+export default withRemoteRefresh(nextConfig);

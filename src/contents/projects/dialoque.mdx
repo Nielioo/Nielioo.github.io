@@ -1,0 +1,74 @@
+---
+title: "Dialoque"
+description: "Dialoque is a multi-platform app designed to help children learn English vocabulary, available on iOS, iPadOS, and watchOS, using engaging features like speech recognition and gamification."
+publishedAt: "2023-08-23"
+techs: "swift"
+github: "https://github.com/Dialoque-App/Dialoque"
+---
+
+> ## Short Explanation
+
+Dialoque is a multi-platform app designed to help children learn English vocabulary, available on iOS, iPadOS, and watchOS, using engaging features like speech recognition and gamification.
+
+> ## Project Goals
+
+The key goals for Dialoque were:
+
+- To develop an interactive learning platform that helps children expand their English vocabulary.
+- To integrate speech recognition, haptic feedback, and game mechanics to enhance user engagement.
+- To publish a seamless multi-platform app (iOS, iPadOS, watchOS) and ensure smooth deployment on the App Store.
+
+<blockquote className="with-icons">
+   ## Tech Stack Used
+   <div className="not-prose mt-2">
+      <TechIcons techs={["swift"]} />
+   </div>
+</blockquote>
+
+- Frontend: SwiftUI, WidgetKit
+- Backend: CloudKit
+- APIs & Frameworks:
+   - CoreData for local data management.
+   - Combine for reactive programming.
+   - SwiftSpeech for speech recognition and vocabulary practice.
+   - Core Haptics for interactive feedback during learning.
+   - Game Center for user progress tracking and achievements.
+- Development Tools: Xcode, App Store Connect
+
+> ## Features
+
+### Vocabulary Practice
+An interactive feature that helps children learn and practice English vocabulary through voice recognition and haptic feedback.
+
+### Multi-Platform Support
+
+Seamless experience across iOS, iPadOS, and watchOS, allowing children to continue their learning on any Apple device.
+
+### Progress Tracking
+
+Game Center integration to track progress, achievements, and provide motivational feedback.
+
+### Widget Support
+
+WidgetKit implementation for quick vocabulary practice directly from the home screen.
+
+### CloudSync
+
+CloudKit support for syncing progress across devices, ensuring continuity in learning.
+
+> ## The Problems and How I Deal With It
+
+Integrating various platforms (iOS, iPadOS, watchOS) into a cohesive experience was a challenge, which I overcame 
+by using SwiftUI to design a responsive UI that adapts to multiple device form factors and screen sizes. Managing 
+local data and syncing it across devices was addressed by utilizing CoreData for local storage and CloudKit for 
+seamless syncing, ensuring data consistency. Ensuring speech recognition accuracy for children’s voices was a 
+challenge, which I solved by implementing SwiftSpeech and fine-tuning the app’s sensitivity to varied pronunciations. 
+Finally, to develop an engaging yet educational app, I incorporated gamification elements through Game Center and 
+Core Haptics, making the app both fun and educational.
+
+> ## Lessons Learned
+
+Through this project, I gained expertise in SwiftUI for multi-platform development, ensuring a unified experience 
+across devices, and deepened my understanding of CoreData and CloudKit for efficient data management and synchronization 
+in a cloud-based environment. I also enhanced my skills in integrating speech recognition into interactive applications 
+and gained valuable experience with app deployment on the App Store, addressing platform-specific requirements.
