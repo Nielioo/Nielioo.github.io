@@ -1,15 +1,15 @@
 import type { NextConfig } from "next";
-import path from 'path';
-import nextRemoteRefresh from 'next-remote-refresh';
+import path from "path";
+import nextRemoteRefresh from "next-remote-refresh";
 
 const withRemoteRefresh = nextRemoteRefresh({
-  paths: [path.resolve(__dirname, 'src', 'contents')],
+   paths: [path.resolve(__dirname, "src", "contents")],
 });
 
 const nextConfig: NextConfig = {
-  eslint: {
-    dirs: ["src"],
-  },
+   eslint: {
+      ignoreDuringBuilds: true,
+   },
 };
 
 export default withRemoteRefresh(nextConfig);

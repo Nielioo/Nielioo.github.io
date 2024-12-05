@@ -1,15 +1,10 @@
 import clsx from "clsx";
 import * as React from "react";
 
-import { trackEvent } from "@/lib/analytics";
 import useLoaded from "@/hooks/useLoaded";
 
-import Accent from "@/components/Accent";
 import Layout from "@/components/layout/Layout";
-import CustomLink from "@/components/links/CustomLink";
 import Seo from "@/components/Seo";
-import TechStack from "@/components/TechStack";
-import Tooltip from "@/components/Tooltip";
 import TabSection from "@/components/about/TabSection";
 import AboutSection from "@/components/about/AboutSection";
 
