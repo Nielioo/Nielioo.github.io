@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import NextImage from "next/image";
 import { InferGetStaticPropsType } from "next";
 import { IoArrowDownOutline, IoNewspaperSharp } from "react-icons/io5";
 import { SiGithub } from "react-icons/si";
@@ -45,7 +46,7 @@ export default function IndexPage({
                         className="text-2xl md:text-4xl 2xl:text-5xl"
                         data-fade="1"
                      >
-                        Hi! I'm{" "}
+                        Hi! I&apos;m{" "}
                         <Accent>
                            <TypeAnimation
                               sequence={[
@@ -81,7 +82,7 @@ export default function IndexPage({
                         className="mt-3 max-w-4xl leading-relaxed text-gray-700 dark:text-gray-200 md:mt-4 md:text-lg 2xl:text-xl"
                         data-fade="3"
                      >
-                        Don't forget to sign my{" "}
+                        Don&apos;t forget to sign my{" "}
                         <CustomLink href="/guestbook">guestbook</CustomLink>!
                      </p>
                      <div
@@ -156,7 +157,7 @@ export default function IndexPage({
                      data-fade="5"
                      className="hidden mt-8 md:mt-0 md:w-2/5 md:block"
                   >
-                     <img
+                     <NextImage
                         src="/images/hero-image.png"
                         alt="Hero Illustration"
                         className="w-full h-auto object-contain"
@@ -202,7 +203,7 @@ export default function IndexPage({
                            <Accent>Featured Projects</Accent>
                         </h2>
                         <p className="mt-2 text-gray-600 dark:text-gray-300">
-                           Some projects that I'm proud of
+                           Some projects that I&apos;m proud of
                         </p>
                         <ul className="mt-4 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
                            {populatedProjects.map((project, i) => (

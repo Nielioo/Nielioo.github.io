@@ -77,11 +77,11 @@ export default function UmamiPage() {
             </div>
             <div className='mt-8 flex flex-col items-center gap-4'>
               <Button onClick={removeUmami}>allow track umami</Button>
-              <Button onClick={addUmami}>don't track umami</Button>
+              <Button onClick={addUmami}>don&apos;t track umami</Button>
               <Button onClick={removeIncrement}>
                 allow increase view count
               </Button>
-              <Button onClick={addIncrement}>don't increase view count</Button>
+              <Button onClick={addIncrement}>don&apos;t increase view count</Button>
             </div>
           </div>
         </section>

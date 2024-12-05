@@ -22,7 +22,7 @@ export default function DesignPage() {
             <section className={clsx(isLoaded && "fade-in-start")}>
                <div className="layout py-12">
                   <h1 data-fade="0">
-                     <Accent>Website's Design</Accent>
+                     <Accent>Website&apos;s Design</Accent>
                   </h1>
 
                   <p

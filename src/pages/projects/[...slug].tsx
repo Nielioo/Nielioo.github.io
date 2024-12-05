@@ -1,5 +1,6 @@
 import { getMDXComponent } from "mdx-bundler/client";
 import { GetStaticPaths, GetStaticProps } from "next";
+import NextImage from "next/image";
 import { ParsedUrlQuery } from "querystring";
 import * as React from "react";
 import { HiLink, HiOutlineEye, HiPlay, HiUser } from "react-icons/hi";
@@ -66,12 +67,13 @@ export default function SingleProjectPage({ code, frontmatter }: ProjectType) {
          <main>
             <section className="">
                <div className="layout">
-                  {/* <CloudinaryImg
-              publicId={`theodorusclarence/${frontmatter.banner}`}
-              alt={frontmatter.title}
-              width={1440}
-              height={792}
-            /> */}
+                  <NextImage
+                     src={frontmatter.banner}
+                     alt={frontmatter.title}
+                     className="pointer-events-none my-2 w-full"
+                     width={1440}
+                     height={792}
+                  />
 
                   <h1 className="mt-4">{frontmatter.title}</h1>
                   <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">

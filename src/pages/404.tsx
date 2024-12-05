@@ -70,7 +70,7 @@ export default function NotFoundPage() {
                            Whoops.. 404!
                         </div>
                         <div className="box__description-text text-primary mt-5">
-                           It seems like we couldn't find the page you were
+                           It seems like we couldn&apos;t find the page you were
                            looking for...
                         </div>
 

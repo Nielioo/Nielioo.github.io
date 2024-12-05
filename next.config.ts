@@ -8,7 +8,11 @@ const withRemoteRefresh = nextRemoteRefresh({
 
 const nextConfig: NextConfig = {
    eslint: {
+      dirs: ["src"],
       ignoreDuringBuilds: true,
+   },
+   images: {
+      domains: ["og-nielio.vercel.app"],
    },
 };
 

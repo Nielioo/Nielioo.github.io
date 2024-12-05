@@ -1,4 +1,5 @@
 import * as React from "react";
+import NextImage from "next/image";
 import clsx from "clsx";
 import Accent from "@/components/Accent";
 import useLoaded from "@/hooks/useLoaded";
@@ -15,11 +16,13 @@ export default function AboutSection() {
                   <h1 className="mt-1" data-fade="1">
                      <Accent>Daniel Aprillio</Accent>
                   </h1>
-                  <img
+                  <NextImage
                      data-fade="0"
                      src="/images/about-image.png"
                      alt="About Daniel Aprillio"
-                     className="w-full max-w-[300px] h-auto md:hidden my-4 object-cover"
+                     className="md:hidden my-4 object-cover"
+                     width={300}
+                     height={300}
                   />
                   <div className="mt-4" data-fade="2">
                      <article className="prose dark:prose-invert">
@@ -51,11 +54,13 @@ export default function AboutSection() {
                      </article>
                   </div>
                </div>
-               <img
+               <NextImage
                   data-fade="0"
                   src="/images/about-image.png"
                   alt="About Daniel Aprillio"
                   className="hidden md:block w-1/3 object-contain self-center"
+                  width={400}
+                  height={400}
                />
             </div>
          </div>

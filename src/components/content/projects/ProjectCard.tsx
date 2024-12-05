@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import * as React from "react";
+import NextImage from "next/image";
 
 // import CloudinaryImg from '@/components/images/CloudinaryImg';
 import UnstyledLink from "@/components/links/UnstyledLink";
@@ -24,28 +25,27 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
             className
          )}
       >
+         
          <UnstyledLink
             href={`/projects/${project.slug}`}
             className="flex h-full flex-col items-start rounded-md p-4 focus:outline-none focus-visible:ring focus-visible:ring-primary-300"
          >
+            <NextImage
+               src={project.banner}
+               alt={project.title}
+               className="pointer-events-none my-2 w-full"
+               width={1440}
+               height={792}
+            />
             <h4>{project.title}</h4>
-            <p className="mb-auto my-2 text-sm text-gray-700 dark:text-gray-300">
+            <p className="mb-auto mt-2 text-sm text-gray-700 dark:text-gray-300">
                {project.description}
             </p>
-            <div className="mt-4">
+            <div className="mt-2">
                <TechIcons
                   techs={project.techs.split(",") as Array<TechListType>}
                />
             </div>
-
-            {/* <CloudinaryImg
-          className='pointer-events-none mt-3 w-full'
-          publicId={`theodorusclarence/${project.banner}`}
-          alt={project.title}
-          width={1440}
-          height={792}
-          preview={false}
-        /> */}
 
             <p className="animated-underline mt-2 inline-block font-medium">
                See more →
