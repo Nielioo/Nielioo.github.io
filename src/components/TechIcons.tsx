@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import * as React from 'react';
 import { IoLogoVercel } from 'react-icons/io5';
+import { FaJava } from "react-icons/fa6";
 import {
   SiFirebase,
   SiGit,
@@ -22,6 +23,15 @@ import {
   SiLivewire,
   SiPhp,
   SiMysql,
+  SiUnity,
+  SiCsharp,
+  SiKotlin,
+  SiFlutter,
+  SiPython,
+  SiPostgresql,
+  SiSupabase,
+  SiBootstrap,
+  SiAndroidstudio,
 } from 'react-icons/si';
 
 import Tooltip from '@/components/Tooltip';
@@ -65,6 +75,10 @@ const techList = {
     icon: SiTailwindcss,
     name: 'Tailwind CSS',
   },
+  bootstrap: {
+    icon: SiBootstrap,
+    name: 'Bootstrap',
+  },
   scss: {
     icon: SiSass,
     name: 'SCSS',
@@ -88,6 +102,18 @@ const techList = {
   mongodb: {
     icon: SiMongodb,
     name: 'MongoDB',
+  },
+  mysql: {
+    icon: SiMysql,
+    name: 'MySQL',
+  },
+  postgresql: {
+    icon: SiPostgresql,
+    name: 'PostgreSQL',
+  },
+  supabase: {
+    icon: SiSupabase,
+    name: 'Supabase',
   },
   swr: {
     icon: IoLogoVercel,
@@ -133,8 +159,32 @@ const techList = {
     icon: SiLivewire,
     name: 'LiveWire',
   },
-  mysql: {
-    icon: SiMysql,
-    name: 'MySQL',
+  unity: {
+    icon: SiUnity,
+    name: 'Unity',
+  },
+  csharp: {
+    icon: SiCsharp,
+    name: 'C#',
+  },
+  androidstudio: {
+    icon: SiAndroidstudio,
+    name: 'Android Studio',
+  },
+  java: {
+    icon: FaJava,
+    name: 'Java',
+  },
+  kotlin: {
+    icon: SiKotlin,
+    name: 'Kotlin',
+  },
+  flutter: {
+    icon: SiFlutter,
+    name: 'Flutter',
+  },
+  python: {
+    icon: SiPython,
+    name: 'Python',
   },
 };
