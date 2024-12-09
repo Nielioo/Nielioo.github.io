@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@eslint/config-array": "^0.19.0",
-    "@eslint/object-schema": "^2.1.4",
+    "@eslint/object-schema": "^2.1.5",
     "@giscus/react": "^3.0.0",
     "@swc/core": "^1.9.3",
     "@swc/helpers": "^0.5.15",
