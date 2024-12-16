@@ -12,7 +12,7 @@ import useContentMeta from "@/hooks/useContentMeta";
 import useScrollSpy from "@/hooks/useScrollspy";
 
 import Comment from "@/components/content/Comment";
-import LikeButton from "@/components/content/LikeButton";
+// import LikeButton from "@/components/content/LikeButton";
 import MDXComponents from "@/components/content/MDXComponents";
 import TableOfContents, {
    HeadingScrollSpy,

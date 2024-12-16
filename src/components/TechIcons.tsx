@@ -32,6 +32,9 @@ import {
   SiSupabase,
   SiBootstrap,
   SiAndroidstudio,
+  SiDocker,
+  SiOpenai,
+  SiDart,
 } from 'react-icons/si';
 
 import Tooltip from '@/components/Tooltip';
@@ -183,8 +186,20 @@ const techList = {
     icon: SiFlutter,
     name: 'Flutter',
   },
+  dart: {
+    icon: SiDart,
+    name: 'Dart',
+  },
   python: {
     icon: SiPython,
     name: 'Python',
+  },
+  docker: {
+    icon: SiDocker,
+    name: 'Docker',
+  },
+  openai: {
+    icon: SiOpenai,
+    name: 'OpenAI',
   },
 };
