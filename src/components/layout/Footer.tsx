@@ -69,7 +69,7 @@ function SocialLinks() {
           html={
             <div className='inline-block rounded-md border bg-white p-2 text-gray-600 shadow-md dark:border-gray-600 dark:bg-dark dark:text-gray-200'>
               {copyStatus === 'idle'
-                ? 'Click the mail logo to copy'
+                ? 'Click the mail logo to copy '
                 : 'Copied to clipboard 🥳'}
               <Accent className='inline-block font-medium'>
                 nieliocc@gmail.com
