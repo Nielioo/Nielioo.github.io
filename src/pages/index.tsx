@@ -238,8 +238,8 @@ export async function getStaticProps() {
    const projects = await getAllFilesFrontmatter("projects");
 
    const featuredProjects = getFeatured(projects, [
+      "gomemo-ai",
       "aspra-network",
-      "moco-kids",
       "dialoque",
    ]);
 
