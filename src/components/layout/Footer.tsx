@@ -154,7 +154,7 @@ const socials: Social[] = [
     id: 'Linkedin',
     text: (
       <>
-        Find me on <Accent className='font-medium'>Linkedin</Accent>
+        Connect with me on <Accent className='font-medium'>Linkedin</Accent>
       </>
     ),
   },
@@ -174,7 +174,7 @@ const socials: Social[] = [
     id: 'Telegram',
     text: (
       <>
-        You can chat me on <Accent className='font-medium'>Telegram</Accent>
+        Drop me a message on <Accent className='font-medium'>Telegram</Accent>
       </>
     ),
   },
@@ -184,7 +184,7 @@ const socials: Social[] = [
     id: 'Discord',
     text: (
       <>
-        You can chat me on <Accent className='font-medium'>Discord</Accent>
+        Catch me on <Accent className='font-medium'>Discord</Accent>
       </>
     ),
   },
@@ -194,7 +194,7 @@ const socials: Social[] = [
     id: 'Instagram',
     text: (
       <>
-        Find me on <Accent className='font-medium'>Instagram</Accent>
+        Follow me on <Accent className='font-medium'>Instagram</Accent>
       </>
     ),
   },
