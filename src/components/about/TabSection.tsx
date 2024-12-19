@@ -9,8 +9,8 @@ const TAB_DATA = [
     id: 'education',
     content: (
       <ul className='list-disc pl-4 text-gray-600 dark:text-gray-300'>
-        <li>Bachelor of Informatics Engineering - Ciputra University Batch 2020, Surabaya</li>
-        <li>iOS Developer - Apple Developer Academy Cohort 2023, Surabaya</li>
+        <li>Bachelor of Informatics Engineering with Summa Cum Laude Predicate GPA 3.97 out of 4.00 at Ciputra University Batch 2020, Surabaya</li>
+        <li>iOS Developer at Apple Developer Academy Cohort 2023, Surabaya</li>
       </ul>
     ),
   },
