@@ -28,28 +28,28 @@ export default function AboutSection() {
                      <article className="prose dark:prose-invert">
                         <p data-fade="3">
                            Hello! You can call me Daniel. I am a Software
-                           Engineer with over a year of experience at the Apple
-                           Developer Academy. I have honed my skills across a
-                           wide range of programming languages and technologies.
-                           With a background in informatics, I am proficient in
-                           Swift, Objective-C, SwiftUI, iOS SDK, CloudKit, and
-                           App Store Connect. Additionally, I have hands-on
-                           experience with Dart, Flutter, Java, Kotlin,
-                           Firebase, MySQL, PHP, Laravel Framework, JavaScript,
-                           Node.js, Next.js, Python, REST APIs, Git, and Agile
-                           methodologies.
+                           Developer with over year of experience at the Apple
+                           Developer Academy. I have honed my skills in a
+                           variety of programming languages and technologies. My
+                           technical expertise as informatics student includes
+                           Swift, Objective-C, SwiftUI, iOS SDK, CloudKit,
+                           SwiftData, App Store Connect, Flutter, Dart, Java,
+                           Kotlin, Firebase, Supabase, PostgreSQL, MySQL, PHP,
+                           Laravel Framework, Javascript, Typescript, NodeJs,
+                           ReactJs, NextJs, VueJs, Python, REST API, Docker,
+                           Git, Github, and more.
                         </p>
                         <p data-fade="4">
-                           I am well-versed in the Mobile Software Development
-                           Life Cycle (SDLC) and test engineering & automation,
-                           and have a strong understanding of design patterns
-                           like MVC and MVVM. Alongside my technical expertise,
-                           I bring strong leadership, collaboration, and time
-                           management skills to every project. I am passionate
-                           about developing innovative solutions and always
-                           eager to take on new challenges. I look forward to
-                           leveraging my skills and experience in future
-                           projects and collaborations.
+                           I am well-versed in the Agile Methodologies and
+                           Mobile Software Development Life Cycle (SDLC) and
+                           test engineering & automation. I also have a strong
+                           understanding of design patterns like MVC and MVVM.
+                           Alongside my technical expertise, I bring strong
+                           leadership, collaboration, and time management skills
+                           to every project. I am passionate about developing
+                           innovative solutions and always eager to take on new
+                           challenges. I look forward to leveraging my skills
+                           and experience in future projects and collaborations.
                         </p>
                      </article>
                   </div>
