@@ -28,16 +28,16 @@ export default function AboutSection() {
                      <article className="prose dark:prose-invert">
                         <p data-fade="3">
                            Hello! You can call me Daniel. I am a Software
-                           Developer with over year of experience at the Apple
-                           Developer Academy. I have honed my skills in a
-                           variety of programming languages and technologies. My
-                           technical expertise as informatics student includes
-                           Swift, Objective-C, SwiftUI, iOS SDK, CloudKit,
-                           SwiftData, App Store Connect, Flutter, Dart, Java,
-                           Kotlin, Firebase, Supabase, PostgreSQL, MySQL, PHP,
-                           Laravel Framework, Javascript, Typescript, NodeJs,
-                           ReactJs, NextJs, VueJs, Python, REST API, Docker,
-                           Git, Github, and more.
+                           Developer with ±2 years of experience at various
+                           companies, I have honed my skills in a variety of
+                           programming languages and technologies. My technical
+                           expertise as informatics student includes Swift,
+                           Objective-C, SwiftUI, iOS SDK, CloudKit, SwiftData,
+                           App Store Connect, Flutter, Dart, Java, Kotlin,
+                           Firebase, Supabase, PostgreSQL, MySQL, PHP, Laravel
+                           Framework, Javascript, Typescript, NodeJs, ReactJs,
+                           NextJs, VueJs, Python, QML, REST API, Docker, Git,
+                           Github, and more.
                         </p>
                         <p data-fade="4">
                            I am well-versed in the Agile Methodologies and
