@@ -52,6 +52,7 @@ export type ProjectFrontmatter = {
   techs: string;
   banner: string;
   link?: string;
+  link2?: string;
   github?: string;
   youtube?: string;
 };

@@ -81,14 +81,14 @@ export default function SingleProjectPage({ code, frontmatter }: ProjectType) {
                   </p>
 
                   <div className="mt-2 flex flex-wrap items-center justify-start gap-3 text-sm font-medium text-gray-600 dark:text-gray-300">
-                     <div className="flex items-center gap-1">
+                     {/* <div className="flex items-center gap-1">
                         <HiOutlineEye className="inline-block text-base" />
                         {meta?.views?.toLocaleString() ?? "–––"} views
-                     </div>
-                     {(frontmatter.github ||
+                     </div> */}
+                     {/* {(frontmatter.github ||
                         frontmatter.youtube ||
                         frontmatter.link) &&
-                        " - "}
+                        " - "} */}
                      {frontmatter.github && (
                         <div className="inline-flex items-center gap-2">
                            <SiGithub className="text-lg text-gray-800 dark:text-white" />
@@ -147,6 +147,26 @@ export default function SingleProjectPage({ code, frontmatter }: ProjectType) {
                               }
                            >
                               Open Live Site
+                           </CustomLink>
+                        </div>
+                     )}
+                     {frontmatter.link && frontmatter.link2 && " - "}
+                     {frontmatter.link2 && (
+                        <div className="inline-flex items-center gap-2">
+                           <HiLink className="text-lg text-gray-800 dark:text-white" />
+                           <CustomLink
+                              href={frontmatter.link2}
+                              className="mt-1"
+                              onClick={() =>
+                                 trackEvent(
+                                    `Project Live 2: ${frontmatter.title}`,
+                                    {
+                                       type: "link",
+                                    }
+                                 )
+                              }
+                           >
+                              Open Another Live Site
                            </CustomLink>
                         </div>
                      )}

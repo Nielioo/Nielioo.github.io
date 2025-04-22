@@ -35,6 +35,7 @@ import {
   SiDocker,
   SiOpenai,
   SiDart,
+  SiSentry,
 } from 'react-icons/si';
 
 import Tooltip from '@/components/Tooltip';
@@ -201,5 +202,9 @@ const techList = {
   openai: {
     icon: SiOpenai,
     name: 'OpenAI',
+  },
+  sentry: {
+    icon: SiSentry,
+    name: 'Sentry',
   },
 };
